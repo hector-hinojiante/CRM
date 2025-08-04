@@ -22,7 +22,7 @@ def cargar_datos(excel_file):
         "Unnamed: 7": "Expected Revenue",
         "Unnamed: 8": "Creation Date",
         "Unnamed: 9": "Close Date",
-        "Unnamed: 10": "Team Member",
+        "Unnamed: 10": "Team member",
         "Unnamed: 11": "Progress to Won",
         "Unnamed: 12": "Last Interaction",
         "Unnamed: 13": "Next Step"
