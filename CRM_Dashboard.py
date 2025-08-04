@@ -29,7 +29,7 @@ def cargar_datos(excel_file):
     })
 
     # Limpiar y convertir tipos
-    df = df.dropna(subset=["Company Name", "Stage"])
+    df = df.dropna(subset=["Company", "Stage"])
     df["Value"] = pd.to_numeric(df["Value"], errors="coerce").fillna(0)
     df["Expected Revenue"] = pd.to_numeric(df["Expected Revenue"], errors="coerce").fillna(0)
 
