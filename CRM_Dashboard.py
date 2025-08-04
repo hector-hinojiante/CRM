@@ -42,9 +42,9 @@ if archivo:
         # Filtros
         st.sidebar.header("🔍 Filtros")
         etapas = st.sidebar.multiselect("Etapa del embudo", df["Stage"].unique(), default=list(df["Stage"].unique()))
-        responsables = st.sidebar.multiselect("Responsable", df["Team member"].dropna().unique(), default=list(df["Team Member"].dropna().unique()))
+        responsables = st.sidebar.multiselect("Responsable", df["Team member"].dropna().unique(), default=list(df["Team member"].dropna().unique()))
 
-        df_filtrado = df[df["Stage"].isin(etapas) & df["Team Member"].isin(responsables)]
+        df_filtrado = df[df["Stage"].isin(etapas) & df["Team member"].isin(responsables)]
 
         # Métricas clave
         st.subheader("📈 Métricas Generales")
